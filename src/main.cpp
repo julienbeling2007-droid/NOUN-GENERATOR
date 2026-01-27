@@ -1,6 +1,6 @@
 #include "ui.h"
 #include <iostream>
-#include <windows.h>
+#include<windows.h>
 
 int main(int argc, char* argv[]) {
     SetConsoleOutputCP(CP_UTF8);
@@ -14,12 +14,12 @@ int main(int argc, char* argv[]) {
     std::cout << "==================================" << std::endl;
     std::cout << "  Générateur de Mots - SDL3" << std::endl;
     std::cout << "==================================" << std::endl;
-    std::cout << "Application lancée avec succès!😁😁" << std::endl;
+    std::cout << "commencons la magie!😁" << std::endl;
     std::cout << std::endl;
     
     ui.run();
     
-    std::cout << "Application terminée..👌👌  :" << std::endl;
+    std::cout << "magie terminée.👌" << std::endl;
     
     return 0;
 }

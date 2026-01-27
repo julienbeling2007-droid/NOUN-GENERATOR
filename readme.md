@@ -14,7 +14,7 @@ Préfixe et suffixe personnalisés
 
 🎨 Interface graphique moderne avec ImGui
 📊 Historique des 50 derniers mots générés
-⚡ Génération unique ou par lots (5 mots)
+⚡ Génération unique ou par lots (2 ou plus)
 🔤 Syllabes spécifiques par catégorie (français)
 
 🧩 Méthode de Génération par Syllabes
@@ -42,39 +42,26 @@ Les syllabes typiques du type sélectionné
 
 🏗️ Architecture Modulaire
 random_word_generator/
-├── build.py                 # Script de compilation
+├── build.py                  Script de compilation
 ├── README.md
 ├── include/
-│   ├── generator.h         # Module de génération
-│   └── ui.h                # Module interface utilisateur
+│   ├── generator.h          Module de génération
+│   └── ui.h                 Module interface utilisateur
 ├── src/
-│   ├── main.cpp            # Point d'entrée
-│   ├── generator.cpp       # Implémentation du générateur
-│   ├── ui.cpp              # Implémentation de l'UI
+│   ├── main.cpp             Point d'entrée
+│   ├── generator.cpp        Implémentation du générateur
+│   ├── ui.cpp               Implémentation de l'UI
 │   ├── imgui_impl_sdl3.cpp
 │   ├── imgui_impl_sdlrenderer3.cpp
-│   └── imgui/              # Bibliothèque ImGui
+│   └── imgui/               Bibliothèque ImGui
 │       ├── imgui.cpp
 │       ├── imgui_demo.cpp
 │       ├── imgui_draw.cpp
 │       ├── imgui_tables.cpp
 │       └── imgui_widgets.cpp
-├── build/                  # Fichiers objets (généré)
-└── bin/                    # Exécutable (généré)
-🔧 Prérequis
-Linux
-bashsudo apt-get install libsdl3-dev g++ python3
-macOS
-bashbrew install sdl3
-Windows
+├── build/                   Fichiers objets (généré)
+└── bin/                     Exécutable (généré)
 
-Installer MSYS2 ou MinGW avec g++
-Télécharger SDL3 depuis le site officiel
-
-Bibliothèque ImGui
-Télécharger ImGui depuis GitHub :
-bashcd src
-git clone https://github.com/ocornut/imgui.git
 Les fichiers suivants sont nécessaires dans src/imgui/ :
 
 imgui.cpp, imgui.h
